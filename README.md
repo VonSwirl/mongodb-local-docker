@@ -4,12 +4,16 @@
 
 ### Done!
 
+### Connection String
+
+http://localhost:27017
+
 ### Expected Log:
 
 ```bash
-➜  local-mongo-docker-compose docker-compose up
-Creating network "local-mongo-docker-compose_mongodb-network" with driver "bridge"
-Creating volume "local-mongo-docker-compose_dbdata" with default driver
+mongodb-local-docker docker-compose up
+Creating network "mongodb-local-docker_mongodb-network" with driver "bridge"
+Creating volume "mongodb-local-docker-compose_dbdata" with default driver
 Creating mongodb ... done
 Attaching to mongodb
 mongodb    | 2021-02-08T11:06:44.758+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
