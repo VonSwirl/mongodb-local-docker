@@ -1,0 +1,16 @@
+version: "3.7"
+networks:
+  mongodb-network:
+    driver: bridge
+volumes:
+  dbdata:
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:4.2.3-bionic
+    ports:
+      - "27017:27017"
+    volumes:
+      - dbdata:/data/db
+    networks:
+      - mongodb-network
