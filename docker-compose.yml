@@ -7,10 +7,21 @@ volumes:
 services:
   mongodb:
     container_name: mongodb
+
+    hostname: LocalDockerMongoDB
+
     image: mongo:4.2.3-bionic
+
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=ADDusername
+      - MONGO_INITDB_ROOT_PASSWORD=ADDpassword
+
     ports:
       - "27017:27017"
     volumes:
       - dbdata:/data/db
+
     networks:
       - mongodb-network
+
+    restart: on-failure

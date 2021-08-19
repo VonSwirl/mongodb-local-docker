@@ -1,16 +1,12 @@
 # Local Mongo DB Instance
 
-### Run: `docker-compose up`
+## Run: `docker-compose up`
 
-### Done!
+## Connection String
 
-### Connection String
+`mongodb://ADDusername:ADDpassword@localhost:27017/aihearyou?directConnection=true&ssl=false`
 
-http://localhost:27017
-
-#
-
-### Expected Log:
+## Expected Log
 
 ```bash
 mongodb-local-docker docker-compose up
